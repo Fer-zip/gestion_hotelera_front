@@ -1,0 +1,34 @@
+.horizontal-scroll-container {
+  overflow-x: auto;
+  padding-bottom: 15px; 
+}
+
+.horizontal-scroll-container .row {
+  display: inline-flex; 
+}
+
+.horizontal-scroll-container .col-md-4 {
+  flex: 1 0 auto; 
+  min-width: 250px; 
+  margin-right: 15px;
+}
+
+.room-card {
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.room-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.room-card.selected {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+}
+
+.total-amount-box {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}

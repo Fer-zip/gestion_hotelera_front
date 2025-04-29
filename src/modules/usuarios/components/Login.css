@@ -1,0 +1,75 @@
+/* Layout principal */
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Columna izquierda */
+.login-left {
+  background-color: #007b8f;
+  color: white;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle {
+  background-color: #c5e1f4;
+  color: #003b4f;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+/* Columna derecha */
+.login-right {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-icon {
+  font-size: 3rem;
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #004d40;
+  padding-bottom: 0.5rem;
+  color: #004d40;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-note {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.left-footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 0.9rem;
+}

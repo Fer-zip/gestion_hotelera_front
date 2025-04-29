@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Inter", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Paleta de colores del diseño UI */
+:root {
+  --blue-100: #CFE2FF;
+  --blue-500: #0D6EFD;
+
+  --cyan-500: #0DCAF0;
+  --cyan-600: #0AA2C0;
+  --cyan-700: #087990;
+  --cyan-800: #055160;
+}

@@ -1,0 +1,19 @@
+.service-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  border-color: #007bff;
+}
+
+.service-card.selected {
+  border-color: #28a745; /* Green border for selected */
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+.total-section {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}

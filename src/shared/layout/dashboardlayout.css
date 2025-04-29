@@ -1,0 +1,157 @@
+.dashboard-container {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.dashboard-row {
+  height: 100%;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: var(--cyan-800); /* Color oscuro de la barra lateral */
+  color: white;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc; /* Color de marcador */
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+.sidebar-nav-item:hover *{
+  color: white;
+}
+
+.sidebar-nav .nav-link {
+  color: white;
+  padding: 15px 10px;
+  border-radius: 1rem;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.sidebar-nav .nav-link:hover {
+  background-color: #0AA2C0; 
+}
+
+.sidebar-nav:hover .nav-link:hover .icon-placeholder{
+  background-color: var(--cyan-500); 
+  color: white
+}
+
+.icon {
+  width: 60px;
+  height: 50px;
+  padding: 10px;
+  background-color: var(--cyan-700);
+  margin-right: 10px;
+}
+
+.icon-top-nav {
+  width: 60px;
+  height: 45px;
+  padding: 10px;
+}
+.icon-top-nav:hover{
+  background-color: var(--cyan-600);
+}
+
+.sidebar-footer {
+  margin-top: auto; /* Empuja el footer hacia abajo */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.main-content {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cyan-700); /* Color de la barra superior */
+  border-bottom: 1px solid #ddd;
+}
+
+.top-navbar .navbar-brand {
+  padding-inline-start: 20px;
+  font-weight: bold;
+}
+
+.top-navbar .nav-link {
+  color: #333;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido del Nav.Link */
+}
+
+.nav-pills-placeholder {
+  background-color: #6f42c1; /* Color del botón "Nav Pills" */
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.content-area {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  padding: 20px;
+  background-color: #f8f9fa; /* Color de fondo del área de contenido */
+  overflow-y: auto; /* Permite scroll si el contenido es largo */
+}
+
+.sidebar.collapsed {
+  width: 80px; /* Ancho reducido para el estado colapsado */
+  align-items: center; /* Centrar elementos */
+}
+
+.sidebar.collapsed .sidebar-nav .nav-link {
+  justify-content: center; /* Centrar iconos */
+  padding: 15px 0; /* Ajustar padding */
+}
+
+.sidebar.collapsed .sidebar-nav .nav-link span {
+  display: none; /* Ocultar texto */
+}
+
+.sidebar.collapsed .sidebar-footer {
+  justify-content: center; /* Centrar el botón de toggle */
+  padding: 20px 0; /* Ajustar padding */
+}
+
+.sidebar.collapsed .sidebar-footer span {
+  display: none; /* Ocultar texto del botón de toggle */
+}
+
+.sidebar.collapsed .logo-placeholder {
+  width: 50px; /* Ajustar tamaño del logo */
+  height: 50px;
+}
+
+.sidebar.collapsed .icon-placeholder {
+  margin-right: 0; /* Eliminar margen a la derecha del icono */
+}

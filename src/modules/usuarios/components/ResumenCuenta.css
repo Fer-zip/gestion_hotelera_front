@@ -1,0 +1,71 @@
+.resumen-cuenta-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .info-reserva {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .reserva-codigo {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .detalles, .servicios, .servicios-anadidos, .recepcionista {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h6 {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  p, li {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .factura-card {
+    width: 30%;
+    padding: 20px;
+    background-color: #f1f3f5;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .factura-card h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .factura-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .pagar-btn {
+    width: 100%;
+    background-color: #00a3cc;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .pagar-btn:hover {
+    background-color: #0090b0;
+  }
+  

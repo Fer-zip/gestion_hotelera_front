@@ -1,0 +1,18 @@
+.bg-teal {
+    background-color: #007b8a;
+  }
+  
+  .cuadro-usuario {
+    background-color: #deecff;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icono-usuario {
+    width: 60px;
+    height: 60px;
+    background-color: #005b60;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
