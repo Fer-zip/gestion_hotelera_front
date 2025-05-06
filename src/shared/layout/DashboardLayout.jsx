@@ -7,6 +7,8 @@ import { Outlet } from 'react-router-dom';
 import InactivePopUpWithAction from '../modals/InactivePopUp';
 import { useAuth } from '../context/AuthContext';
 
+import { logoImg } from '../../data/images';
+
 const DashboardLayout = ({ children }) => {
   const [tituloDashboard, setTituloDashboard] = useState("Gestión de Hotelería");
   const [estaDesplegado, setEstaDesplegado] = useState(false); // Para desplegar la barra lateral
@@ -26,7 +28,9 @@ const DashboardLayout = ({ children }) => {
         <Col xs={estaDesplegado ? 1 : 2} className={`sidebar ${estaDesplegado ? 'collapsed' : ''}`}> 
           <div className="sidebar-header">
             {/* Logo */}
-            <div className="logo">Logo</div>
+            <Nav.Link href='/'>
+              <img src={logoImg} alt="" className='w-75'/>
+            </Nav.Link>
           </div>
 
           <Nav className="flex-column sidebar-nav">
@@ -53,7 +57,7 @@ const DashboardLayout = ({ children }) => {
               {!estaDesplegado && <span>Habitaciones</span>} 
             </Nav.Link>
 
-            <Nav.Link href="#link5" className="sidebar-nav-item">
+            <Nav.Link href="/servicios" className="sidebar-nav-item">
               <HoverIcon iconoNormal={<HandbagFill color='#9EC5FE' className='icon rounded-3'></HandbagFill>} iconoHover={<HandbagFill color='#FFF' className='icon rounded-3'></HandbagFill>}></HoverIcon>
               {!estaDesplegado && <span>Servicios</span>} 
             </Nav.Link>

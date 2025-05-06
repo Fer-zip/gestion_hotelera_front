@@ -113,9 +113,9 @@ const RegistroHabitacion = () => {
                         onChange={handleInputChange}
                       >
                         <option value="">Seleccione un tipo</option>
-                        <option value="Básica">Básica</option>
-                        <option value="Especial">Especial</option>
-                        <option value="Premium">Premium</option>
+                        <option value="basica">Básica</option>
+                        <option value="especial">Especial</option>
+                        <option value="premium">Premium</option>
                       </Form.Control>
                     </Form.Group>
                   </Col>

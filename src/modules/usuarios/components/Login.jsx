@@ -3,6 +3,8 @@ import { Form, Button } from 'react-bootstrap';
 import { useAuth } from '../../../shared/context/AuthContext';
 import './Login.css';
 
+import { logoImg } from '../../../data/images';
+
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -21,7 +23,7 @@ function Login() {
       <div className="login-left">
         <h2>Bienvenido de nuevo</h2>
         <div className="logo-circle">
-          <p>Logo de<br />Sistema/<br />Hotelería</p>
+          <img src={logoImg} alt="" />
         </div>
         <div className="left-footer">
            Ingrese sus credenciales para acceder al sistema

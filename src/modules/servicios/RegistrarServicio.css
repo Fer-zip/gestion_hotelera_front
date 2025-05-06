@@ -1,0 +1,20 @@
+.service-preview {
+  background-color: #e0f7fa; /* Light blue background */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  height: 100%; /* Make it fill the height of the column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-preview h4 {
+  margin-bottom: 5px;
+}
+
+.service-preview p {
+  color: #007bff; /* Bootstrap primary blue color */
+  font-size: 1.1em;
+}

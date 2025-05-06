@@ -53,7 +53,7 @@ import Modal from 'react-bootstrap/Modal';
  *   );
  * }
  */
-function InactivePopUpWithAction({ show, onHide, modalTitle, modalContent, haveCancellButton, variantActionButton, action, textActionButton }) {
+function InactivePopUpWithAction({ show, onHide, modalTitle, modalContent, haveCancellButton, variantActionButton, action, textActionButton, controlAdicional=null }) {
 
   const handleActionClick = () => {
     if (action) {
@@ -88,6 +88,7 @@ function InactivePopUpWithAction({ show, onHide, modalTitle, modalContent, haveC
       <Modal.Footer>
         {/* Boton Cancelar */}
         {haveCancellButton && <Button variant='secondary' onClick={handleCancelClick}>Cancelar</Button>}
+        {controlAdicional && controlAdicional}
         {/* Botón de Cierre con la accion */}
         <Button variant={variantActionButton} onClick={handleActionClick}>{textActionButton}</Button>
       </Modal.Footer>

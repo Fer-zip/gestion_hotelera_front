@@ -7,18 +7,10 @@ import { ArrowLeft } from 'react-bootstrap-icons';
 import DashboardNote from '../../../components/DashboardNote';
 import { useReserva } from '../../../shared/context/ReservaContext';
 import { useTemporalAlert } from '../../../shared/context/TemporalAlertContext';
-
-// Imágenes 
-import basicaImg from '../../../assets/basica.png';
-import especialImg from '../../../assets/especial.png';
-import premiumImg from '../../../assets/premium.png';
+import tiposHabitaciones from '../../../data/tipoHabitaciones';
 
 const SeleccionarHabitacion = () => {
-  const tiposHabitaciones = [
-    {id: 1, tipo: "basica", descripcion: "Habitación básica", precio: 50, img: basicaImg},
-    {id: 2, tipo: "especial", descripcion: "Habitación especial", precio: 100, img: especialImg},
-    {id: 3, tipo: "premium", descripcion: "Habitación premium", precio: 150, img: premiumImg}
-  ]
+  
   const { reservaData, updateReservaData, nextStep, prevStep } = useReserva();
   const {addAlert} = useTemporalAlert();
 

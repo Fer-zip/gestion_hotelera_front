@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import { PersonCircle } from 'react-bootstrap-icons';
 import TopNav from '../../../components/TopNav';
 import { useReserva } from '../../../shared/context/ReservaContext';
-import {transaccionReserva} from '../../../services/transaccionReserva';
+import {transaccionReserva} from '../../../services/reserva';
 import { useNavigate } from 'react-router-dom';
 import { useTemporalAlert } from '../../../shared/context/TemporalAlertContext';
 import PopUpWithAction from '../../../shared/modals/PopUpWithAction';

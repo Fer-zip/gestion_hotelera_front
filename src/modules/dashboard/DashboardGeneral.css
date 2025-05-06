@@ -1,0 +1,45 @@
+/* Basic styling for the dashboard cards */
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Specific styles for the metric cards */
+.card[style*="background-color: #e0e7ff"] {
+  color: #000; /* Adjust text color if needed */
+}
+
+/* Specific styles for the featured client card */
+.card[style*="background-color: #20c997"] {
+  color: white;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.card-text.h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card-text.h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text.h5 {
+    font-size: 1.25rem;
+}
+
+/* Style for the graph placeholder */
+.card-body[style*="min-height: 300px"] {
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 10px;
+}
