@@ -1,5 +1,5 @@
 import RESTServicio from "./RESTServicio";
-import { obtenerFechaActualYYYYMMDD } from "../utils/fecha";
+import { obtenerFechaActualYYYYMMDD, obtenerFechaActualYYYYMMDDMasSemana } from "../utils/fecha";
 
 import axios from "axios"
 import API_URL from "./api";
@@ -36,7 +36,7 @@ async function transaccionReserva(data){
         const reserva = await reservasService.Post({
             id_huesped: cliente.id,
             fecha_inicio: obtenerFechaActualYYYYMMDD(),
-            fecha_fin: "",
+            fecha_fin: obtenerFechaActualYYYYMMDDMasSemana(),
             estado: "pendiente",
             tipo_habitacion: data.habitacion.tipo
         })
